@@ -1,0 +1,24 @@
+Technical Interview Questions
+Computer Science Fundamentals:
+Explain the principles of Object-Oriented Programming (OOP) such as encapsulation, inheritance, and polymorphism.
+What is the difference between overloading and overriding?
+Discuss normalization in databases and the concept of functional dependency.
+Data Structures and Algorithms:
+What is the difference between an array and a linked list?
+Describe binary search and its time complexity.
+Explain linear and non-linear data structures and provide examples of each.
+Database Management:
+Write SQL queries to perform joins and explain the different types of joins.
+What are primary keys and foreign keys?
+Operating Systems:
+Discuss process management and the difference between a process and a thread.
+What are the different states of a process?
+Coding Problems:
+Solve coding challenges such as merging two sorted linked lists or implementing sorting algorithms with optimal time complexity.
+Write a program to check the validity of a password or to traverse an array.
+Project Discussion:
+Describe your previous projects, the technologies used, and your specific role in those projects.
+How did you implement authentication in your web development project?
+Miscellaneous:
+Explain basic concepts of computer networks, such as TCP/IP model and OSI model.
+What programming languages are you comfortable with, and how do you choose which one to use for a particular project?

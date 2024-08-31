@@ -1,0 +1,4 @@
+Sub MergeCell()
+	Range("A1:G1").Merge
+	Range("A1").Font.Bold = True
+End Sub

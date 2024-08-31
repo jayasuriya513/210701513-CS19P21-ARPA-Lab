@@ -1,0 +1,7 @@
+AI-Based Real-Time Translation Assistant
+
+Language Analysis Model , HuggingFace Transformer API based activity for Multilingual Translation
+
+https://github.com/VidhiyaSB/Hack-a-bot/tree/main
+
+https://drive.google.com/file/d/1H15JKsRifhOziR_-kibQPB2pNIRPbQY9/view?usp=sharing

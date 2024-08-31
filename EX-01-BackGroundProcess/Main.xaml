@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1268.9454545454546,1090.909090909091" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="962.6181818181818,1097.0181818181818" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -81,7 +81,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="571.6363636363636,1026.3272727272729" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="591.709090909091,1032.4363636363637" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="intCount" />
     </Sequence.Variables>
@@ -90,8 +90,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="509.6727272727273,55.85454545454546" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Jayasuriya R - 210701513" />
-    <Assign sap:VirtualizedContainerService.HintSize="509.6727272727273,82.90909090909092" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <ui:Comment sap:VirtualizedContainerService.HintSize="529.7454545454545,89.01818181818183" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Jayasuriya R - 210701513" />
+    <Assign sap:VirtualizedContainerService.HintSize="529.7454545454545,116.07272727272728" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[intCount]</OutArgument>
       </Assign.To>
@@ -99,17 +99,18 @@
         <InArgument x:TypeArguments="x:Int32">1</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[intCount &lt;= 10]" DisplayName="While" sap:VirtualizedContainerService.HintSize="509.6727272727273,697.309090909091" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[intCount &lt;= 10]" DisplayName="While" sap:VirtualizedContainerService.HintSize="529.7454545454545,739.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
       <ui:InterruptibleWhile.Body>
-        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="475.6363636363637,561.1636363636364" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="495.70909090909095,601.309090909091" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-          <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[Now.Millisecond.ToString + &quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="433.6,166.4" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[New Random().Next(1000, 10000).ToString + Environment.NewLine + New Random().Next(1000, 10000).ToString]" />
-          <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_2">
+          <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="433.74545454545455,123.92727272727274" sap2010:WorkflowViewState.IdRef="Delay_1" />
+          <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="433.74545454545455,114.32727272727273" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[New Random().Next(1000, 10000).ToString]" />
+          <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[Now.Millisecond.ToString + &quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="433.74545454545455,168.43636363636364" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[New Random().Next(1000, 10000).ToString]" />
+          <Assign sap:VirtualizedContainerService.HintSize="433.74545454545455,106.47272727272728" sap2010:WorkflowViewState.IdRef="Assign_2">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Int32">[intCount]</OutArgument>
             </Assign.To>

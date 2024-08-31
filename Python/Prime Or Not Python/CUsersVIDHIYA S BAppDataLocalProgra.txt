@@ -1,0 +1,3 @@
+"C:\Users\VIDHIYA S B\AppData\Local\Programs\Python\Python311\python311.dll"
+
+"C:\Users\VIDHIYA S B\AppData\Local\Programs\Python\Python311"
